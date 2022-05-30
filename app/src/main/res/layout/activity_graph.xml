@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    tools:context=".GraphActivity">
+    <TextView
+        android:id="@+id/bmitext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginBottom="20dp"/>
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/GraphView"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:layout_below="@id/bmitext"
+
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>
